@@ -1,33 +1,33 @@
 #include <stdio.h>
 
-int main(){
+int main() {
+    // Comments in C serve two main purposes:
+    // 1. Making code more readable and maintainable
+    // 2. Temporarily disabling code during debugging
 
-    //This is a single line comment
+    // Single-line comments: Everything after // on the same line is ignored
+    printf("Hello!\n");  // This comment explains the code to the left
 
-    /*
-    This
-    is 
-    a 
-    multi-line 
-    comment
-    */
+    /* Multi-line comments: Everything between /* and */ is ignored
+     * They're great for longer explanations
+     * or temporarily disabling multiple lines of code
+     */
 
-    //printf("Pizza is delicious\n");
+    // Escape Sequences - Special characters in C:
+    printf("1. New line:\nStarting on a new line\n");
+    printf("2. Tab:\tCreates space\tlike this\n");
+    printf("3. Quotes: \"Text in quotes\"\n");
+    printf("4. Backslash: C:\\Program Files\\\n");
 
-    
-    /*
-    escape sequence = Character combination consisting of a backslash \
-                      followed by a letter or combination of digits.
-                      They specify actions within a text.
-                      /n = new line
-                      /t = tab
-    */
+    /* Common Escape Sequences:
+     * \n - New line
+     * \t - Tab
+     * \" - Double quote
+     * \\ - Backslash
+     * \' - Single quote
+     * \b - Backspace
+     * \r - Carriage return
+     */
 
-    printf("Pizza is delicious\n");
-    printf("Isn't it?\n");
-
-    printf("1\t2\t3\n4\t5\t6\n7\t8\t9\n");
-
-    printf("\"I like Pizza\" - Abraham Lincoln probably\n");
     return 0;
 }

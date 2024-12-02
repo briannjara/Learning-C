@@ -1,30 +1,45 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main (){
+int main() {
+    // Common data types
+    int number = 42;         // Whole numbers
+    float decimal = 3.14;    // Decimal numbers (6-7 digits)
+    double pi = 3.14159265;  // More precise decimals (15-17 digits)
+    char letter = 'A';       // Single character
+    char text[] = "Hello";   // String (character array)
 
-    char a = 'a';
-    char b[] = "Bro";
+    // Character types
+    char a = 'a';                    // Single character               %c
+    char b[] = "Bro";                // String (char array)           %s
 
-    float c = 292929;
-    double d = 1.75757575757557575757;  //double float   %lf
+    // Floating-point types
+    float c = 3.14159;               // Single precision              %f
+    double d = 1.75757575757557575;  // Double precision             %lf
 
-    bool e = true;  //True or False.
+    // Boolean type
+    bool e = true;                   // Boolean (true/false)          %d
 
-    char f = 127;  //Can store from -128 to +127
-    unsigned char g = 255;  //Can store from 0 to +255     %d
+    // Character as integer types
+    char f = 127;                    // Range: -128 to +127           %d
+    unsigned char g = 255;           // Range: 0 to +255              %d
 
-    short int h = 5454; //from -32,768 to +32,767 
-    unsigned short int i = 25225; //from 0 to +65,535     %d
+    // Short integer types
+    short int h = 32767;             // Range: -32,768 to +32,767     %d
+    unsigned short int i = 65535;    // Range: 0 to +65,535           %d
 
-    int j = 625376; //   %d
-    unsigned k = 75427536; // 0 to 4 billon                %u                 
+    // Integer types
+    int j = 625376;                  // Standard integer              %d
+    unsigned int k = 75427536;       // Range: 0 to ~4.2 billion      %u
 
-    long long int l = 2131627371638716783; //   %lld
-    unsigned long long int m = 75427536; // 0 to 18 quintillion
+    // Long long integer types
+    long long int l = 2131627371638716783;    // Very large integer   %lld
+    unsigned long long int m = 75427536;      // Range: 0 to 18 quintillion  %llu
 
-   //printf("%lld",l);
-    //printf("%d",g);
+    // Example usage (uncomment to test)
+    // printf("Long long int value: %lld\n", l);
+    // printf("Unsigned char value: %d\n", g);
+
     return 0;
 }
 
